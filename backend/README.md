@@ -1,3 +1,3 @@
-# 🌿 Legolas 🧝🏻
+# 🌿 Legolas Backend 🧝🏻
 
-Management system for small business.
+Backend for Legolas management system for small business.
