@@ -9,8 +9,6 @@ export default function Home({ history }) {
   const [password, setPassword] = useState('');
 
   async function handleSubmit(e) {
-    console.log(email);
-    console.log(password);
 
     e.preventDefault();
 
@@ -20,10 +18,12 @@ export default function Home({ history }) {
     });
 
     console.log(response);
+
+    history.push('/dashboard');
+
   }
 
   return(
-
     
     <div className='home-container'>
 
