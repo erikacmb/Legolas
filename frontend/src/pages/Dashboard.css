@@ -1,7 +1,7 @@
-.dashboard-container {
+.dashboard-unlogged {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background-color:crimson;
 }
