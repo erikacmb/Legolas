@@ -17,18 +17,14 @@ export default function Home({ history }) {
 
     e.preventDefault();
 
-    const response = await api.post('/admin/login', {
-      email,
-      password
-    });
-
-    const { status, message } = response.data;
-
-    if (status === 200) { 
-      history.push('/dashboard')
-    } else { 
-      // aqui não está printando e não atualiza a variável errorMessage
-      setErrorMessage(message)
+    try {
+      const response = await api.post('/admin/login', { email, password });
+      console.log(response);
+      if (response.status === 200) { 
+        history.push('/dashboard')
+      }
+    } catch (error) {
+      setErrorMessage(error.message)
     }
   
   }
