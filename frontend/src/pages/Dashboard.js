@@ -2,6 +2,8 @@ import React from 'react';
 import './Dashboard.css';
 import * as Constants from '../constants.js';
 
+import NavigationBar from '../components/NavigationBar';
+
 export default function Dashboard({ history }) { 
 
   const token = localStorage.getItem('@fronent/token')
@@ -16,11 +18,8 @@ export default function Dashboard({ history }) {
   if ((token) && (logged)) { 
     return (
       <div className='dashboard-container'>
-        <p>{Constants.LOGGED_MESSAGE}</p><br/>
-        <form onSubmit={handleButtonClick}>
-          <button type='submit'>DESLOGAR</button>
-        </form>
-    </div>
+        <NavigationBar history = {history}/>
+      </div>
     );
   } else {
     return (

@@ -51,18 +51,18 @@ export default function Home({ history }) {
     
         <form onSubmit={handleSubmit}>
           <input
-            placeholder='email@legolas.com'
+            placeholder={Constants.LOGIN_EMAIL_PLACEHOLDER}
             value={email}
             onChange={e => setEmail(e.target.value)}
           />
   
           <input
             type='password'
-            placeholder='***********************'
+            placeholder={Constants.LOGIN_PASSWORD_PLACEHOLDER}
             value={password}
             onChange={e => setPassword(e.target.value)}
           />
-          <button type='submit'>Legolaaaas!</button>
+          <button type='submit'>{Constants.LOGIN_BUTTON_TEXT}</button>
   
           <p className='home-error-message'>{errorMessage}</p>
   
