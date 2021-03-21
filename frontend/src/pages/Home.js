@@ -7,8 +7,13 @@ export default function Home({ history }) {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   async function handleSubmit(e) {
+
+    if (!email || !password) { 
+      return
+    }
 
     e.preventDefault();
 
@@ -17,10 +22,15 @@ export default function Home({ history }) {
       password
     });
 
-    console.log(response);
+    const { status, message } = response.data;
 
-    history.push('/dashboard');
-
+    if (status === 200) { 
+      history.push('/dashboard')
+    } else { 
+      // aqui não está printando e não atualiza a variável errorMessage
+      setErrorMessage(message)
+    }
+  
   }
 
   return(
@@ -43,7 +53,11 @@ export default function Home({ history }) {
           onChange={e => setPassword(e.target.value)}
         />
         <button type='submit'>Legolaaaas!</button>
+
+        <p className='home-error-message'>{errorMessage}</p>
+
       </form>
+      
     </div>
   );
 }

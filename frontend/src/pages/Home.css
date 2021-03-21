@@ -17,9 +17,9 @@
   margin-top: 10px;
   border: 1px solid #ddd;
   border-radius: 9px;
-  height: 45px;
+  height: 42px;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
 }
 
@@ -31,8 +31,8 @@
   margin-top: 10px;
   border: 0px;
   border-radius: 9px;
-  height: 45px;
-  font-size: 16px;
+  height: 42px;
+  font-size: 14px;
   background: #1F78ED;
   font-weight: bold;
   color: white;
@@ -44,5 +44,15 @@
 }
 
 .logo { 
-  width: 22%;
+  width: 20%;
+  margin-bottom: 48px;
+}
+
+.home-error-message { 
+  display: flex;
+  flex-direction: row;
+  font-size: 9px;
+  color: red;
+  justify-content: center;
+  margin-top: 2px;
 }
