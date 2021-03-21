@@ -1,6 +1,10 @@
-# 🌿 Legolas Frontend 🧝🏻
+<p align="center">
+  <img width="250" src="./src/assets/logo.png">
+</p>
 
-Frontend for Legolas management system for small business.
+# The Legolas Project - Frontend
+
+Legolas is a management system for small business.
 
 ## Getting Started with Create React App
 
