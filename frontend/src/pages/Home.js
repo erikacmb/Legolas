@@ -29,6 +29,7 @@ export default function Home({ history }) {
       if (response.status === 200 && response.data.token) { 
         localStorage.setItem('@fronent/token', response.data.token)
         localStorage.setItem('@frontend/logged', true)
+        localStorage.setItem('@frontend/email', email)
         history.push('/dashboard')
       }
     } catch (error) {
