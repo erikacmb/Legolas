@@ -17,7 +17,7 @@ export default function Dashboard({ history }) {
 
   if ((token) && (logged)) { 
     return (
-      <div className='dashboard-container'>
+      <div>
         <NavigationBar history = {history}/>
       </div>
     );

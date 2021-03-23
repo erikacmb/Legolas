@@ -22,6 +22,10 @@
 // export const REPORTS = "Reports"
 // export const LOGOUT_BUTTON_TEXT = "Bye, Legolas!"
 
+// // New Client
+// export const NEW_CLIENT_TITLE = "New Client"
+// export const NEW_CLIENT_BUTTON = "Write down the data, Legolas!"
+
 // PORTUGUESE
 
 // Login & Logout
@@ -45,3 +49,7 @@ export const PRODUCTS_AND_SUPPLIES_VIEW_ALL_SUPPLIERS = "Ver fornecedores"
 export const ORDERS = "Pedidos"
 export const REPORTS = "Relatórios"
 export const LOGOUT_BUTTON_TEXT = "Tchau, Legolas!"
+
+// New Client
+export const NEW_CLIENT_TITLE = "Novo Cliente"
+export const NEW_CLIENT_BUTTON = "Anote os dados, Legolas!"

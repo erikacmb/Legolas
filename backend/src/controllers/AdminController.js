@@ -47,7 +47,7 @@ module.exports = {
         admin.token = '';
         await admin.save();
         return res.status(200).json({ status: 200, message: "Logged out."}); 
-      } else if (admin && admin.token === ''){ 
+      } else if (admin && admin.token === '') { 
         return res.status(404).json({ status: 404, message: "Already logged out."});
       } else { 
         return res.status(400).json({ status: 400, message: "Ops! Something bad happened."})

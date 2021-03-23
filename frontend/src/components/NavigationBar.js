@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import * as Constants from '../constants.js'; 
+import api from '../services/api';
 
 class NavigationBar extends React.Component {
 
@@ -13,7 +14,10 @@ class NavigationBar extends React.Component {
     this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
-  handleButtonClick() { 
+  async handleButtonClick() { 
+    const email = localStorage.getItem('@fronent/email')
+    const response = await api.post('/client', { email });
+    console.log(response);
     localStorage.clear()
     localStorage.setItem('@frontend/logged', false)
     this.props.history.push('/')
