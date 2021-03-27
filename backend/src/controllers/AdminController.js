@@ -41,7 +41,7 @@ module.exports = {
     },
 
     async logout(req, res) { 
-      const { email } = req.headers;
+      const { email } = req.body;
       const admin = await Admin.findOne({ email });
       if (admin && admin.token !== '') { 
         admin.token = '';

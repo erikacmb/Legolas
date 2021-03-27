@@ -15,12 +15,11 @@ class NavigationBar extends React.Component {
   }
 
   async handleButtonClick() { 
-    const email = localStorage.getItem('@fronent/email')
-    const response = await api.post('/client', { email });
-    console.log(response);
-    localStorage.clear()
-    localStorage.setItem('@frontend/logged', false)
-    this.props.history.push('/')
+    const email = localStorage.getItem('@frontend/email')
+    const response = await api.post('/admin/logout', { email });
+    localStorage.clear();
+    localStorage.setItem('@frontend/logged', false);
+    this.props.history.push('/');
   }
 
   render() { 
