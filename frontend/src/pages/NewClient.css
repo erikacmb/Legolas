@@ -1,72 +1,15 @@
-
-.title { 
+.new-client-title { 
   padding-left: 15px;
-  padding-top: 5px;
+  padding-top: 10px;
   font-size: 25px;
   font-weight: bold;
 }
 
-.new-client-container {
-  height: 100%;
-  display: flex;
-  padding-left: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.new-client-container form {
-  width: 100%;
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
-}
-
-.new-client-form-container { 
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-}
-
-.new-client-form-column { 
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding: 5px;
-}
-
-.new-client-container form input {
-  margin-top: 10px;
-  border: 1px solid #ddd;
-  border-radius: 9px;
-  height: 42px;
-  padding: 0 10px;
-  font-size: 14px;
-  color: #666;
-}
-
-.new-client-container form input ::placeholder {
-  color: #999;
-}
-
-.new-client-container-form-button {
-  width: 20%;
-  margin-top: 10px;
-  border: 0px;
-  border-radius: 9px;
-  height: 42px;
-  font-size: 14px;
-  background: #1F78ED;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-}
-
-.new-client-button-align {
-  height: 100%;
-  display: flex;
-  padding-left: 15px;
-  justify-content: center;
-  align-items: center;
+.new-client-container { 
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 550px;
 }
 
 /* .home-error-message { 
@@ -77,3 +20,14 @@
   justify-content: center;
   margin-top: 2px;
 } */
+
+.new-client-button { 
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.new-client-spinner { 
+  margin-left: 8px;
+  margin-top: 4px;
+}
